@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex testing</title>
+    <style type="text/css">
+        .fontset {
+            font-size: 200px;
+            line-height: 200px;
+        }
+
+        .content {
+            background-color: blue;
+            width: 800px;
+            height: 800px;
+            display: flex;
+            /* flex-direction: row | row-reverse | column | column-reverse; content中內容項目的排列方式 */
+            flex-direction: row;
+            /* flex-wrap: nowrap | wrap | wrap-reverse; item 在有需要的時候自動換行 */
+            flex-wrap: wrap;
+            /* justify-content: flex-start | flex-end | center | space-between靠兩邊對齊 | space-around保留二分之一對齊|space-evently平均對齊;content主軸線對齊作用方式 */
+            justify-content: space-around;
+            /* aligen-item:flex-start | flex-end | center | baseline | stretch;content交錯軸線作用對齊的方式，單一元件。 */
+            align-items: stretch;
+            /* align-content: flex-start | flex-end | center | space-between | space-around | space-evenly;stretch; content 內容交錯軸整體元件的對齊  */
+            align-content: stretch;
+        }
+
+        .item {
+            background-color: chartreuse;
+            width: 98px;
+            border: solid 1px red;
+            /* margin-top: 50px; */
+
+        }
+
+        .alignSelfStart {
+            /*  align-self: auto | stretch | center | flex-end | baseline 調整子元素交錯軸線的位置 */
+            align-self: center;
+        }
+
+        .orderCtl {
+            order: 1;
+        }
+
+        .alignStart {
+            align-self: flex-start;
+        }
+
+        .alignEnd {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item alignSelfStart orderCtl">
+            <h2>A1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item  alignStart ">
+            <h2>A2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignEnd">
+            <h2>A5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quaerat tenetur eveniet inventore
+                reiciendis? Voluptatum officiis soluta ducimus beatae aspernatur aliquid assumenda odit at accusantium.
+                Porro voluptate sapiente ex laborum!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

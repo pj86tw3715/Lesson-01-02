@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flex texting</title>
+    <style type="text/css">
+        .fontset {
+            font-size: 200px;
+            line-height: 200px;
+        }
+
+        .content {
+            background-color: blue;
+            width: 800px;
+            height: 800px;
+            display: flex;
+            /* flex-direction: row | row-reverse | column | column-reverse; content中內容項目的排列方式 */
+            flex-direction: row;
+            /* flex-wrap: wrap | wrap | wrap-reverse; item 在有需要的時候自動換行 */
+            flex-wrap: wrap;
+            /* justify-content: flex-start|flex-end|space-between|space-around|space-evently;content主軸對齊作用方式 */
+            justify-content: space-around;
+            /* aligen-item:flex-start | flex-end | center | baseline | stretch;content交錯軸作用對齊的方式 */
+            align-items: stretch;
+            /* align-content: flex-start | flex-end | center | space-between | space-around;stretch; content 內容交錯軸整體元件的對齊  */
+            align-content: stretch;
+        }
+
+        .item {
+            background-color: chartreuse;
+            width: 98px;
+            border: solid 1px red;
+        }
+        .alignSelfStart{
+            /*  align-self: auto | stretch | center | flex-end | baseline 調整子元素交錯軸線的位置 */
+            align-self:center;
+        }
+        .aligenStart{
+            align-self: flex-start;
+        }
+        .aligenEnd{
+            align-self: flex-end;
+        }
+        .orderCtl{
+            /* order:0|0-N|default:0|控制區塊順序位子 */
+            order: +8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item alignSelfStart orderCtl">
+            <h2>A1</h2>
+            <p>
+                貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </p>
+        </div>
+        <div class="item aligenStart">
+            <h2>A2</h2>
+            <p>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </p>
+        </div>
+        <div class="item alignSelfStart ">
+            <h2>A3</h2>
+            <p>
+                貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </p>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A4</h2>
+            <P>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </P>
+        </div>
+        <div class="item aligenEnd">
+            <h2>A5</h2>
+            <P>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </P>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A6</h2>
+            <P>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </P>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A7</h2>
+            <P>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </P>
+        </div>
+        <div class="item alignSelfStart">
+            <h2>A8</h2>
+            <P>貓老闆餐廳二層，塔莉娅的房間。
+                  清晨的自然光從玻璃天窗灑下，萦繞在木制橫梁和書架上，淡淡的木香和鬥櫃間的卧室香薰交織，散發出綠葉馥奇香調和朗姆酒般淡雅清新卻不甜膩的氣息。
+            </P>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
